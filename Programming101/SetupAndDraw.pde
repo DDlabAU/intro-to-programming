@@ -8,8 +8,7 @@ void setup() {
   //initializing the size of the ellipse
   size = 50;
   
-  //try and put background here in setup and delete it 
-  //from draw and see what happens
+  //try and place background here in setup and delete it from draw and see what happens
   //background(255);
 }
 
