@@ -14,6 +14,7 @@ Fra matematikken kender vi koordinatsystemer, hvor punktet (0,0) enten ligger ne
 På computeren ligger punktet (0,0) øverst i venstre hjørne.
 
 ![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/coordinate.jpg "Programming coordinate system")
+
 Source: http://py.processing.org/tutorials/drawing/
 
 ## Processing 
