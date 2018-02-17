@@ -13,7 +13,7 @@ For at programmere noget visuelt, der kan ses på ens skærm, bliver man nødt t
 Fra matematikken kender vi koordinatsystemer, hvor punktet (0,0) enten ligger nederst i venstre hjørne(positive tal) eller midt på koordinatsystemet (både positive og negative tal. 
 På computeren ligger punktet (0,0) øverst i venstre hjørne.
 
-INDSÆT BILLEDE
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Programming coordinate system")
 Source: http://py.processing.org/tutorials/drawing/
 
 ## Processing 
