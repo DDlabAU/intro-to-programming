@@ -1,6 +1,7 @@
 //Declaring a variable to hold the size of the ellipse
 int size;
 
+//is done once when the program is executed
 void setup() {
   size(500,500);
   
@@ -12,6 +13,7 @@ void setup() {
   //background(255);
 }
 
+//loops over and over until the program is told otherwise
 void draw() {
   background(255);
   //color of the ellipse
