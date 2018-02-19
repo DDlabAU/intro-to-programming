@@ -115,7 +115,7 @@ Skriver den angivne parameter i konsollen.
 
 Se flere funktioner i processing referencen: https://processing.org/reference/ 
 
-*Eksempel på brug af funktioner: sketch kaldet ”Shapes.pde”*
+*Eksempel på brug af funktioner: sketch kaldet ”[Shapes.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/SetupAndDraw.pde)*
 
 **_Quick task: Tegn et hus i processing!_**
 
