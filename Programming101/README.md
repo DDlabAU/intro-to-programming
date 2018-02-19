@@ -165,7 +165,7 @@ Se flere indbyggede variabler i processing referencen: https://processing.org/re
 **_Quick task: Erstat værdier med variabler i jeres processing sketch af et hus!_**
 
 ### Funktioner
-For at gøre programmer animerede og/eller interaktive bliver vi nødt til at kunne lave variationer i løbet af programmet kører. Dette gøres ved at introducere loops til programmet. Et loop er en funktion der udføres om og om igen indtil man siger den skal stoppe. Ved at ændre dele af programmet en smule for hvert loop kan vi gøre det animeret og/ eller interaktivt frem for statisk.
+For at gøre programmer animerede og/eller interaktive bliver vi nødt til at kunne lave variationer i løbet af at programmet kører. Dette gøres ved at introducere loops til programmet. Et loop er en funktion der udføres om og om igen indtil man siger den skal stoppe. Ved at ændre dele af programmet en smule for hvert loop kan vi gøre det animeret og/ eller interaktivt frem for statisk.
 I processing er der 2 funktioner, der skrives således:
 ```processing
 void setup() {
