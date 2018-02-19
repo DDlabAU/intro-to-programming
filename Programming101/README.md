@@ -115,7 +115,7 @@ Skriver den angivne parameter i konsollen.
 
 Se flere funktioner i processing referencen: https://processing.org/reference/ 
 
-*Eksempel på brug af funktioner: sketch kaldet ”[Shapes.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/SetupAndDraw.pde)*
+*Eksempel på brug af funktioner: sketch kaldet ["Shapes.pde”] (.../blob/master/Programming101/Shapes.pde)*
 
 **_Quick task: Tegn et hus i processing!_**
 
@@ -179,7 +179,7 @@ Alt kode der skrives mellem det to klammer (`{ }`) efter `setup()` udføres kun 
 
 Alt kode der skrives mellem det to klammer (`{ }`) efter `draw()` udføres om og om igen indtil programmet lukkes.
 
-*Eksempel på brug af setup og draw: sketch kaldet ”SetupAndDraw.pde”*
+*Eksempel på brug af setup og draw: sketch kaldet [”SetupAndDraw.pde”](.../blob/master/Programming101/SetupAndDraw.pde)*
 
 ### Gode links:
 
