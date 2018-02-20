@@ -23,13 +23,18 @@ Et programmeringssprog baseret på java med et integreret udviklingsmiljø.
 -	En nem og god måde at blive introduceret til kode, hvor produktet kan ses med det samme.
 
 Processing cheat sheet: https://www.cs.bham.ac.uk/~cxp291/ri/processing_cheat_sheet_english.pdf
+
 En reference med beskrivelser af alle funktioner i processing: https://processing.org/reference/
+
 **User interface**
-Det er i området kaldet Text editor at koden skal skrives. Fejlbeskeder fra comileren vil blive skrevet i det det kaldes message area. I consollen skrives der de fejl der findes under programmets udførsel samt hvad man vælger selv at skrive til consollen (med funktionen println(), se nedenfor under "Andre funktioner"). For at execute sin kode trykkes der på run symbolet(trekanten/pilen) oppe i venstre hjørne.
+- Det er i området kaldet Text editor at koden skal skrives.
+- Fejlbeskeder fra comileren vil blive skrevet i det det kaldes message area.
+- I consollen skrives der de fejl der findes under programmets udførsel samt hvad man vælger selv at skrive til consollen (med funktionen println(), se nedenfor under "Andre funktioner").
+- For at execute sin kode trykkes der på run symbolet(trekanten/pilen) oppe i venstre hjørne.
 
 ![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/proces.gif "Processing vinduet")
 
-Source:https://processing.org/tutorials/gettingstarted/
+Source: https://processing.org/tutorials/gettingstarted/
 
 # Programmering 
 ## Generel syntax:
