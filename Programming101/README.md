@@ -27,6 +27,8 @@ En reference med beskrivelser af alle funktioner i processing: https://processin
 **User interface**
 Det er i området kaldet Text editor at koden skal skrives. Fejlbeskeder fra comileren vil blive skrevet i det det kaldes message area. I consollen skrives der de fejl der findes under programmets udførsel samt hvad man vælger selv at skrive til consollen (med funktionen println(), se nedenfor under "Andre funktioner"). For at execute sin kode trykkes der på run symbolet(trekanten/pilen) oppe i venstre hjørne.
 
+![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/proces.gif "Processing vinduet")
+
 Source:https://processing.org/tutorials/gettingstarted/
 
 # Programmering 
