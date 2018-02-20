@@ -107,7 +107,9 @@ random(h)
 ///ELLER
 random(l, h);
 ```
-Genererer et ”tilfældigt” decimaltal. Hvis funktionen kun gives 1 parameter(`random(h)`), så genereres der et tilfældigt tal mellem 0 og det angivne parameter. Hvis funktionen gives 2 parametre (`random(l,h)`) så genereres der et tilfældigt tal mellem det første og det sidste parameter. NB! For at kunne benytte sig af den returnerede værdi af denne funktion skal den gemmes i en variabel (se beskrivelsen nedenfor).
+Genererer et ”tilfældigt” decimaltal. Hvis funktionen kun gives 1 parameter(`random(h)`), så genereres der et tilfældigt tal mellem 0 og det angivne parameter. Hvis funktionen gives 2 parametre (`random(l,h)`) så genereres der et tilfældigt tal mellem det første og det sidste parameter. 
+NB! For at kunne benytte sig af den returnerede værdi af denne funktion skal den gemmes i en variabel (se beskrivelsen nedenfor).
+NBB! Hvis du vil give random funktionen en variabel som parameter skal den være defineret som datatypen `float` IKKE `int`! Float er datatypen for decimaltal.
 ```processing
 println(x);
 ```
