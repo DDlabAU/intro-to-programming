@@ -157,7 +157,7 @@ Hvor begge vil resultere i disse cirkler:
 
 ![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/for-loop.png "Cirkler lavet m. for-loop")
 
-*Eksempel på brug af for og while loop: sketch kaldet ["ForAndWhile.pde](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/ForAndWhile.pde)*
+*Eksempel på brug af for og while loop: sketch kaldet ["ForAndWhile.pde"](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/ForAndWhile.pde)*
 
 ## Arrays
 Et array er en liste med elementer af den samme datatype, som har en defineret størrelse. Elementerne kan enten defineres med det samme man laver liste, eller efterhånden som man finder ud af hvad der skal være i listen.
