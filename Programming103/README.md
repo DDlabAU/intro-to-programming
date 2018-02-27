@@ -9,7 +9,9 @@
 Lav et program der **skal** opfylde følgende krav:
 - Mindst 2 måder at interagere med programmet på (mus, tastatur, ...)
 - Mindst 1 funktion du selv definerer
-- Mindst 1 loop ud over `draw`
+- Mindst 1 loop ud over `draw` (for eller while)
 - Mindst 1 `if`/`else` statement
 
 Programmet skal være færdigt til **tirsdag d. 13. Marts 2018**
+
+**HUSK AT BRUGE REFERENCEN: https://processing.org/reference/**
