@@ -92,7 +92,7 @@ boolean on = true;
 ```
 Herefter kan vi bruge denne variabel ligesom vi kunne bruge vores begrænsninger tidligere, f.eks. i en if-sætning:
 ```processing
-if(on = true) {
+if(on == true) {
   //…
 }
 //kan også skrives således
