@@ -29,9 +29,9 @@ Herefter kan vi også bestemme størrelsen på billedet med funktionen `resize()
 ```processing
 img.resize(0,100);
 ```
-*Eksempel på upload af billede til sketch: sketch kaldet ”LoadImage.pde” i mappen ”LoadImage”*
+*Eksempel på upload af billede til sketch: sketch kaldet [”LoadImage.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/LoadImage/LoadImage.pde) i mappen ”LoadImage”*
 
-*Eksempel på billede brugt i forloop: sketch kaldet ” Images.pde” i mappen ” Images”*
+*Eksempel på billede brugt i forloop: sketch kaldet [”Images.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/Images/Images.pde) i mappen ” Images”*
 
 _**Quick Task: Load et billede ind i en sketch**_
 
@@ -58,7 +58,7 @@ PImage chosen = get();
 ```
 Andre funktioner der kan bruges på billeder kan findes I referencen: https://processing.org/reference/
 
-*Eksempel på brug af funktioner på billede: sketch kaldet ”Drawing.pde” i mappen ”Drawing”*
+*Eksempel på brug af funktioner på billede: sketch kaldet [”Drawing.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/Drawing/Drawing.pde) i mappen ”Drawing”*
 
 ## Interager med områder på kanvas
 
@@ -79,7 +79,7 @@ void mousePressed() {
 } 
 ```
 
-*Eksempel på brug af definerede områder: sketch kaldet ”DrawingWSize.pde” i mappen ”DrawingWSize”*
+*Eksempel på brug af definerede områder: sketch kaldet [”DrawingWSize.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/DrawingWSize/DrawingWSize.pde) i mappen ”DrawingWSize”*
 
 _**Quick Task: Definer et område på billedet fra den sidste øvelse, så det bliver interaktivt, så der sker noget, når det klikkes på det, eller musen holdes hen over det el.lign.**_
 
@@ -151,7 +151,7 @@ if (hasCode != null) {
 ```
 `match` kan bruges til at tjekke om en tekststreng indeholder en anden tekststreng. Funktionen tager to parametre. Det første parameter er den streng man gerne vil tjekke om indeholder en anden streng, det andet parameter er den streng man ønsker at undersøger om er indeholdt i den første streng. Resultatet af denne skal gemmes i et array. Hvis arrayet efter at have udført `match` ikke indeholder nogen elementer, (hvis et array er tomt er det lig værdien `null`).
 
-*Eksempel på brug af tekststrenge til at få tekstinput fra bruger: sketch kaldet ”KeyboardInput.pde”*
+*Eksempel på brug af tekststrenge til at få tekstinput fra bruger: sketch kaldet [”KeyboardInput.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/Keyboard_input.pde)*
 
 _**Quick Task: Få tekst til at vises på kanvas enten i en ny sketch, eller brug teksten i sketchen fra sidste øvelse.**_
 
@@ -181,7 +181,7 @@ Hvis den angives med parametre, skal disse angives når funktionen kaldes:
 ```processing
 myFunction(width/2, height/2);
 ```
-*Eksempel på brug af selvdefinerede funktioner frem for at skrive alt i draw: sketch kaldet ”DrawingWFunction.pde” i mappen ”DrawingWFunction.*
+*Eksempel på brug af selvdefinerede funktioner frem for at skrive alt i draw: sketch kaldet [”DrawingWFunction.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/DrawingWFunction/DrawingWFunction.pde) i mappen ”DrawingWFunction.*
 
 _**Quick Task: Arbejd videre på jeres sketch fra de sidste par øvelser og prøv at placere kodestumper i funktioner.**_
 
