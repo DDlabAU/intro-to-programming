@@ -11,7 +11,7 @@ Ofte kan det være praktisk at kunne loade billeder ind i programmet. F.eks. hvi
 
 For at loade et billede ind i sin sketch skal man først lave en ny mappe inde i sin sketchmappe, kaldet ”data”. Heri gemmer man det billede man ønsker at loade ind i programmet. Dvs. der skal være en sti der hedder ”*MySketch*/data/img.jpg”
 
-INDSÆT BILLEDE
+![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/mapper.png "Placering af mapper")
 
 For at loade billedet ind i processing skal der laves en variabel, hvori billedet kan gemmes. Denne variabel skal være af typen `PImage`:
 ```processing
