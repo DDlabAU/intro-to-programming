@@ -194,6 +194,7 @@ Lav et program der **skal** opfylde følgende krav:
 - Mindst 1 `if`/`else` statement
 
 Programmet skal være færdigt og afleveres inden **tirsdag d. 13. marts 2018 kl. 23.59**
+
 **GEM DETTE PROGRAM! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
 
 Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1n7lUI7b3f25L2-24piBPrn5JZwwqZ88F?usp=sharing
