@@ -67,7 +67,7 @@ Der er ingen nem løsning på at kunne interagere med et billede, en form eller 
 void mousePressed() {
 	if(mouseX > rectXpos && mouseX < rectXpos+rectWidth && mouseY > rectYpos && mouseY < rectYpos+rectHeight) {
 		//.. Hvad der skal ske når rektanglet bliver trykket
-}
+	}
 }
 ```
 Ligeledes, hvis det er et cirkulært område, der skal ændres når det trykkes på, bliver man nødt til at se om afstanden fra cirklens centrum ud til musen er mindre end cirklens radius. Dette kan udregnes med `dist()` funktionen. `dist()` tager 4 parametre, som er hhv. de to koordinater, man ønsker at kende afstanden mellem i pixels.
@@ -75,7 +75,7 @@ Ligeledes, hvis det er et cirkulært område, der skal ændres når det trykkes 
 void mousePressed() {
 	if(dist(mouseX, mouseY, ellipX, ellipY) < ellipSize) {
 		//..Hvad der skal ske når cirklen bliver trykket
-}
+	}
 } 
 ```
 
@@ -145,7 +145,7 @@ Andre funktioner tager strenge som parametre.
 ```processing
 String aText = ”I like to code”;
 String [] hasCode = match(aText, “code”);
-If (hasCode != null) {
+if (hasCode != null) {
 	println(“String contains the word: code!”);
 }
 ```
