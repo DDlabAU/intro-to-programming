@@ -1,6 +1,4 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
 
 - [Program:](#program)
   - [Animation og interaktivitet](#animation-og-interaktivitet)
@@ -168,7 +166,7 @@ Skrives således med et for-loop:
 for(int i = 0; i < 10;  i++) {
   int x = 20 + i * 50;
   ellipse(x, height/2, 20, 20);
-} 
+}
 ```
 Hvor begge vil resultere i disse cirkler:
 
@@ -246,7 +244,7 @@ For at specificere nærmere hvilken tast der skal ske hvilken interaktion ved ka
 void keyPressed() {
   if(key == ‘a’) {
     //alt her indenfor vil blive udført når a-tasten er trykket ned
-  } 
+  }
   If(keyCode == UP) {
     // alt her indenfor vil blive udført når piletasten op bliver trykket ned
   }
@@ -254,6 +252,10 @@ void keyPressed() {
 ```
 Andre `keyCode` variabler er f.eks. `ENTER`, `DOWN`, `RIGHT`, `LEFT` og `DELETE`. (Se flere i referencen: https://processing.org/reference/keyCode.html )
 
-Der findes andre funktioner til at lave interaktion med mus og tastatur, f.eks. `mouseClicked`, `mouseDragged` og `keyTyped`, som alle kan slås op i referencen: https://processing.org/reference/ 
+Der findes andre funktioner til at lave interaktion med mus og tastatur, f.eks. `mouseClicked`, `mouseDragged` og `keyTyped`, som alle kan slås op i referencen: https://processing.org/reference/
 
 *Eksempel på brug af `mousePressed` og `keyPressed`: sketch kaldet ["KeyAndMouse.pde"](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/KeyAndMouse.pde)*
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
