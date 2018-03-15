@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Program:](#program)
+- [The Basics](#the-basics)
+  - [Kreativ kode](#kreativ-kode)
+  - [Koordinatsystemet på computeren](#koordinatsystemet-p%C3%A5-computeren)
+  - [Processing](#processing)
+- [Programmering](#programmering)
+  - [Generel syntax:](#generel-syntax)
+    - [Kodeudførsel:](#kodeudf%C3%B8rsel)
+    - [Reference:](#reference)
+    - [Variabler](#variabler)
+    - [Funktioner](#funktioner)
+    - [Gode links:](#gode-links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Program:
 -	Kreativ kode
 -	Processing user interface
@@ -9,15 +28,15 @@ Frem for at programmere noget funktionelt programmerer vi for at udtrykke noget.
 -	Programmering som et redskab til kreativitet og som en udtryksform.
 
 ## Koordinatsystemet på computeren
-For at programmere noget visuelt, der kan ses på ens skærm, bliver man nødt til at fortælle computeren præcis hvor man vil placere elementer. Dette fortæller man med koordinater, der svarer til pixels på skærmen. 
-Fra matematikken kender vi koordinatsystemer, hvor punktet (0,0) enten ligger nederst i venstre hjørne(positive tal) eller midt på koordinatsystemet (både positive og negative tal. 
+For at programmere noget visuelt, der kan ses på ens skærm, bliver man nødt til at fortælle computeren præcis hvor man vil placere elementer. Dette fortæller man med koordinater, der svarer til pixels på skærmen.
+Fra matematikken kender vi koordinatsystemer, hvor punktet (0,0) enten ligger nederst i venstre hjørne(positive tal) eller midt på koordinatsystemet (både positive og negative tal.
 På computeren ligger punktet (0,0) øverst i venstre hjørne.
 
 ![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/coordinate.jpg "Programming coordinate system")
 
 Source: http://py.processing.org/tutorials/drawing/
 
-## Processing 
+## Processing
 Et programmeringssprog baseret på java med et integreret udviklingsmiljø.
 -	Download her: https://processing.org/download/
 -	En nem og god måde at blive introduceret til kode, hvor produktet kan ses med det samme.
@@ -36,9 +55,9 @@ En reference med beskrivelser af alle funktioner i processing: https://processin
 
 Source: https://processing.org/tutorials/gettingstarted/
 
-# Programmering 
+# Programmering
 ## Generel syntax:
-### Kodeudførsel: 
+### Kodeudførsel:
 Kode udføres oppefra og ned, derfor er det vigtigt at være opmærksom på rækkefølgen man skriver sin kode i. Når der tegnes på kanvas, vil det der er skrevet øverst, derfor blive tegnet først, og alt herefter vil blive tegnet ovenpå.
 Alle erklæringer og funktioner skal ende med et semikolon, `;`, for at markere, at funktionen afsluttes.
 
@@ -51,7 +70,7 @@ size(x, y);
 Definerer størrelsen på vinduet. Det første parameter, `x`, er bredden på vinduet i pixels, det andet, `y`, er højden på vinduet i pixels.
 
 ```processing
-background(x); 
+background(x);
 //ELLER
 background(r,g,b);
 ```
@@ -119,7 +138,7 @@ random(h)
 ///ELLER
 random(l, h);
 ```
-Genererer et ”tilfældigt” decimaltal. Hvis funktionen kun gives 1 parameter(`random(h)`), så genereres der et tilfældigt tal mellem 0 og det angivne parameter. Hvis funktionen gives 2 parametre (`random(l,h)`) så genereres der et tilfældigt tal mellem det første og det sidste parameter. 
+Genererer et ”tilfældigt” decimaltal. Hvis funktionen kun gives 1 parameter(`random(h)`), så genereres der et tilfældigt tal mellem 0 og det angivne parameter. Hvis funktionen gives 2 parametre (`random(l,h)`) så genereres der et tilfældigt tal mellem det første og det sidste parameter.
 NB! For at kunne benytte sig af den returnerede værdi af denne funktion skal den gemmes i en variabel (se beskrivelsen nedenfor).
 NBB! Hvis du vil give random funktionen en variabel som parameter skal den være defineret som datatypen `float` IKKE `int`! (Se under "Variabler" nedenfor.)
 
@@ -128,7 +147,7 @@ println(x);
 ```
 Skriver den angivne parameter i konsollen.
 
-Se flere funktioner i processing referencen: https://processing.org/reference/ 
+Se flere funktioner i processing referencen: https://processing.org/reference/
 
 *Eksempel på brug af funktioner: sketch kaldet ["Shapes.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/Shapes.pde)*
 
@@ -155,7 +174,7 @@ a=22;
 ```
 Herefter kan man bruge `a` alle de steder i programmet hvor tallet 22 skal bruges.
 
-Der findes også en anden datatype kaldet `float`, hvilket står for **floating-point**, dvs. **decimaltal**. 
+Der findes også en anden datatype kaldet `float`, hvilket står for **floating-point**, dvs. **decimaltal**.
 
 **Indbyggede variabler:**
 
@@ -177,7 +196,7 @@ mouseY
 ```
 y-koordinatet for musen inden for programvinduet.
 
-Se flere indbyggede variabler i processing referencen: https://processing.org/reference/ 
+Se flere indbyggede variabler i processing referencen: https://processing.org/reference/
 
 **_Quick task: Erstat værdier med variabler i jeres processing sketch af et hus!_**
 
@@ -204,5 +223,4 @@ https://www.youtube.com/user/shiffman/featured
 
 https://github.com/shiffman/LearningProcessing
 
-https://processing.org/reference/ 
-
+https://processing.org/reference/

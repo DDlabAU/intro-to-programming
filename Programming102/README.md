@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Program:](#program)
+  - [Animation og interaktivitet](#animation-og-interaktivitet)
+  - [Operatorer og Conditionals](#operatorer-og-conditionals)
+  - [If/else sætninger](#ifelse-s%C3%A6tninger)
+  - [Datatypen Boolean](#datatypen-boolean)
+  - [While loop](#while-loop)
+  - [For-loop](#for-loop)
+  - [Arrays](#arrays)
+    - [Arrays og For loops](#arrays-og-for-loops)
+  - [Indbyggede funktioner](#indbyggede-funktioner)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Program:
 -	Animation og interaktivitet
 -	Basic operators and conditionals

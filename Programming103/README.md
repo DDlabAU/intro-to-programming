@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Program:](#program)
+  - [Billeder](#billeder)
+    - [Funktioner på billeder](#funktioner-p%C3%A5-billeder)
+  - [Interager med områder på kanvas](#interager-med-omr%C3%A5der-p%C3%A5-kanvas)
+  - [Datatypen String](#datatypen-string)
+    - [Funktioner brugt på Strings](#funktioner-brugt-p%C3%A5-strings)
+  - [Definition af en funktion](#definition-af-en-funktion)
+- [Individuel selvstændig opgave](#individuel-selvst%C3%A6ndig-opgave)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Program:
 - Load og brug billeder
 - Datatypen `String`
