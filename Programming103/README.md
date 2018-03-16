@@ -1,3 +1,16 @@
+
+
+- [Program:](#program)
+  - [Billeder](#billeder)
+    - [Funktioner på billeder](#funktioner-p%C3%A5-billeder)
+  - [Interager med områder på kanvas](#interager-med-omr%C3%A5der-p%C3%A5-kanvas)
+  - [Datatypen String](#datatypen-string)
+    - [Funktioner brugt på Strings](#funktioner-brugt-p%C3%A5-strings)
+  - [Definition af en funktion](#definition-af-en-funktion)
+- [Individuel selvstændig opgave](#individuel-selvst%C3%A6ndig-opgave)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Program:
 - Load og brug billeder
 - Datatypen `String`
@@ -42,7 +55,7 @@ Der findes forskellige funktioner der kan bruges på billeder. Et af disse er `f
 image(img, 0,0);
 filter(INVERT);
 ```
-Der findes mange forskellige filtre, f.eks. `BLUR` og `GREY`. Flere filtre kan findes i referencen: https://processing.org/reference/ 
+Der findes mange forskellige filtre, f.eks. `BLUR` og `GREY`. Flere filtre kan findes i referencen: https://processing.org/reference/
 
 Der kan også udvælges en bestemt pixel eller område af pixels man ønsker at bruge til noget med metoden`get()`.
 ```processing
@@ -76,7 +89,7 @@ void mousePressed() {
 	if(dist(mouseX, mouseY, ellipX, ellipY) < ellipSize) {
 		//..Hvad der skal ske når cirklen bliver trykket
 	}
-} 
+}
 ```
 
 *Eksempel på brug af definerede områder: sketch kaldet [”DrawingWSize.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/DrawingWSize/DrawingWSize.pde) i mappen ”DrawingWSize”*
@@ -94,7 +107,7 @@ En god egenskab ved tekststrenge er at de kan forlænges med hinanden med `+`-op
 ```processing
 String one = ”Hello”;
 String two = ”World”;
-String myText = one + “ “ + two;	//Nu indeholder myText “Hello World” 
+String myText = one + “ “ + two;	//Nu indeholder myText “Hello World”
 ```
 For at vise en tekststreng på kanvas skal man bruge funktionen `text()`.
 ```processing
@@ -202,3 +215,7 @@ Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: htt
 Det vil både være os der arbejder i DD Lab og Christian Dindler, der vil se på jeres programmer.
 
 **HUSK AT BRUGE REFERENCEN: https://processing.org/reference/**
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
