@@ -1,6 +1,6 @@
 
 # introToProgramming
-En introduktion til programmering i processing, originalt planlagt for A2 F18
+En introduktion til programmering i processing, originalt planlagt for A2 F18, opdateret til A2 F19.
 
 Læringsmål:
 -	At kunne forstå og udføre basal programmering
