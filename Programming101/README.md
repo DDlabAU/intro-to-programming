@@ -35,7 +35,7 @@ På computeren ligger punktet (0,0) øverst i venstre hjørne.
 Source: http://py.processing.org/tutorials/drawing/
 
 ## Processing
-Et programmeringssprog baseret på java med et integreret udviklingsmiljø.
+Processing er et programmeringssprog baseret på java med et integreret udviklingsmiljø.
 -	Download her: https://processing.org/download/
 -	En nem og god måde at blive introduceret til kode, hvor produktet kan ses med det samme.
 
@@ -86,7 +86,7 @@ Tegner et rektangel, hvor det øverste venstre hjørne af rektanglet er placeret
 ```processing
 ellipse(x, y, w, h);
 ```
-Tegner en ellipse, hvor parametrene (`x`, `y`) angiver koordinaterne for placeringen af ellipsens centrum. `w` angiver bredden af bredden af ellipsen i pixels og `h` angiver højden.
+Tegner en ellipse, hvor parametrene (`x`, `y`) angiver koordinaterne for placeringen af ellipsens centrum. `w` angiver bredden af ellipsen i pixels og `h` angiver højden.
 ```processing
 triangle(x1,y1,x2,y2,x3,y3);
 ```
@@ -103,9 +103,9 @@ Definerer din egen form. Mellem de to funktioner `beginShape()` og `endShape(CLO
 
 **Colors:**
 
-Hvis en farveangivelse gives 1 parameter, f.eks. `fill(x)`, så står `x` for en gråtoneskalaværdi. Gråtoneskalaværdier angives som tal mellem 0-255, hvor 0=sort og 255 = hvid.
+Hvis en farveangivelse gives 1 parameter, f.eks. `fill(x)`, så står `x` for en gråtoneskalaværdi. Gråtoneskalaværdier angives som tal mellem 0-255, hvor 0 = sort og 255 = hvid.
 
-Hvis en farveangivelse gives 3 parametre, f.eks. `fill(r, g, b)`, så står `r`, `g` og `b` for RGB-farveværdier. RGB(Rød, Grøn, Blå) farver, angives hver som tal mellem 0-255, hvor f.eks. r=0 er ingen rød farve og r=255 er så meget rød som muligt.
+Hvis en farveangivelse gives 3 parametre, f.eks. `fill(r, g, b)`, så står `r`, `g` og `b` for RGB-farveværdier. RGB(Rød, Grøn, Blå) farver, angives hver som tal mellem 0-255, hvor f.eks. r = 0 er ingen rød farve og r = 255 er så meget rød som muligt.
 
 Farveangivelser kan også godtage HEX farver, dvs. f.eks. fill(#ffffff);.
 
@@ -137,7 +137,9 @@ random(h)
 random(l, h);
 ```
 Genererer et ”tilfældigt” decimaltal. Hvis funktionen kun gives 1 parameter(`random(h)`), så genereres der et tilfældigt tal mellem 0 og det angivne parameter. Hvis funktionen gives 2 parametre (`random(l,h)`) så genereres der et tilfældigt tal mellem det første og det sidste parameter.
+
 NB! For at kunne benytte sig af den returnerede værdi af denne funktion skal den gemmes i en variabel (se beskrivelsen nedenfor).
+
 NBB! Hvis du vil give random funktionen en variabel som parameter skal den være defineret som datatypen `float` IKKE `int`! (Se under "Variabler" nedenfor.)
 
 ```processing
@@ -152,9 +154,9 @@ Se flere funktioner i processing referencen: https://processing.org/reference/
 **_Quick task: Tegn et hus i processing!_**
 
 ### Variabler
-Når der er nogle værdier man ikke ønsker skal være statiske, og altså skal ændres i løbet af ens program, så kan disse gemmes i variabler.
+Når der er nogle værdier, man ikke ønsker skal være statiske, og altså skal ændres i løbet af ens program, så kan disse gemmes i variabler.
 
-Derudover hvis der er nogle værdier der bruges meget, så er det en god ide at gemme dem som variabler, for så er det kun et sted der skal rettes hvis man ønsker at ændre værdien.
+Derudover, hvis der er nogle værdier, der bruges meget, så er det en god ide at gemme dem som variabler, for så er det kun ét sted, der skal rettes, hvis man ønsker at ændre værdien.
 
 For at lave en variabel skal den erklæres og initialiseres.
 
@@ -172,7 +174,12 @@ a=22;
 ```
 Herefter kan man bruge `a` alle de steder i programmet hvor tallet 22 skal bruges.
 
-Der findes også en anden datatype kaldet `float`, hvilket står for **floating-point**, dvs. **decimaltal**.
+Definitionen og initialiseringen af variablen kan også gøres på én linje:
+```processing
+int a=22;
+```
+
+Der findes også en datatype kaldet `float`, hvilket står for **floating-point**, dvs. **decimaltal**. En `float`-variabel defineres og initaliseres på samme måde som en `int` variabel.
 
 **Indbyggede variabler:**
 
@@ -211,7 +218,7 @@ void draw() {
 ```
 Alt kode der skrives mellem det to klammer (`{ }`) efter `setup()` udføres kun en gang når programmet startes.
 
-Alt kode der skrives mellem det to klammer (`{ }`) efter `draw()` udføres om og om igen indtil programmet lukkes.
+Alt kode der skrives mellem det to klammer (`{ }`) efter `draw()` udføres om og om igen indtil programmet lukkes. `draw()` udføres 60 gange i sekundet.
 
 *Eksempel på brug af setup og draw: sketch kaldet [”SetupAndDraw.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/SetupAndDraw.pde)*
 
