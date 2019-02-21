@@ -203,16 +203,16 @@ _**Quick Task: Arbejd videre på jeres sketch fra de sidste par øvelser og prø
 Lav et program der **skal** opfylde følgende krav:
 - Mindst 2 måder at interagere med programmet på (mus, tastatur, ...)
 - Mindst 1 funktion du selv definerer
-- Mindst 1 loop ud over `draw` (`for` eller `while`)
+- Mindst 1 `for`- eller `while`-loop
 - Mindst 1 `if`/`else` statement
 
-Programmet skal være færdigt og afleveres inden **tirsdag d. 13. marts 2018 kl. 23.59**
+Programmet skal være færdigt og afleveres inden **Fredag d. 15. marts 2019 kl. 23.59**
 
 **GEM DETTE PROGRAM! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
 
-Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1n7lUI7b3f25L2-24piBPrn5JZwwqZ88F?usp=sharing
+Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: *Link tl drev kommer senere.*
 
-Det vil både være os der arbejder i DD Lab og Christian Dindler, der vil se på jeres programmer.
+Det vil både være os der arbejder i DD Lab, Christian Dindler og Jeanette Falk Olesen, der vil se på jeres programmer.
 
 **HUSK AT BRUGE REFERENCEN: https://processing.org/reference/**
 
