@@ -26,6 +26,13 @@ void setup() {
 void draw() {
   background(0);
   
+  //if(red) means if red == true
+  if (red) {
+    fill(255,0,0);
+  } else {
+    fill(0,0,255);
+  }
+  
   //draw ellipse
   ellipse(x,y, ballSize, ballSize);
   //make the ellipse move
@@ -37,12 +44,5 @@ void draw() {
     ballSpeed = ballSpeed*-1;
     //! means "not", this changes the boolean into to the opposite of what it is
     red = !red;
-  }
-  
-  //if(red) means if red == true
-  if (red) {
-    fill(255,0,0);
-  } else {
-    fill(0,0,255);
   }
 }
