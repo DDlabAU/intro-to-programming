@@ -20,21 +20,23 @@
 
 ## Billeder
 
-Ofte kan det være praktisk at kunne loade billeder ind i programmet. F.eks. hvis man vil lave noget grafisk til en prototype, så i stedet for at prøve at tegne det i processing, med shape funktionerne (`ellipse`, `rect`, osv.) kan man loade en png eller jpg fil ind i processing, og dermed bruge til det i sin interaktive prototype.
+Ofte kan det være praktisk at kunne loade billeder ind i programmet. F.eks. hvis man vil lave noget grafisk til en prototype, så i stedet for at prøve at tegne det i processing, med shape funktionerne (`ellipse()`, `rect()`, osv.) kan man loade en png eller jpg fil ind i processing, og dermed bruge til det i sin interaktive prototype.
 
 For at loade et billede ind i sin sketch skal man først lave en ny mappe inde i sin sketchmappe, kaldet ”data”. Heri gemmer man det billede man ønsker at loade ind i programmet. Dvs. der skal være en sti der hedder ”*MySketch*/data/img.jpg”
 
 ![alt text](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/mapper.png "Placering af mapper")
 
-For at loade billedet ind i processing skal der laves en variabel, hvori billedet kan gemmes. Denne variabel skal være af typen `PImage`:
+For at loade billedet ind i processing skal der laves en variabel, hvori billedet kan gemmes. Denne variabel skal være af datatypen `PImage`:
 ```processing
 PImage img;
 ```
-I `setup` loades billedet herefter ind i variablen med funktionen `loadImage()`, der skal have filnavnet og filformatet som parameter med `” ”` rundt om:
+I `setup()` loades billedet herefter ind i variablen med funktionen `loadImage()`, der skal have filnavnet og filformatet som parameter med `” ”` rundt om:
 ```processing
 img = loadImage(”img.jpg”);
 ```
-Herefter kan vi vise og placere billedet på kanvas med funktionen `image()` der både kan være i `setup` eller `draw`, alt efter hvad man skal bruge billedet til. `image()` har 3 parametre, det første er navnet på variablen med billedet, de to sidste angiver positionen af billedets øverste venstre hjørne:
+Herefter kan vi vise og placere billedet på kanvas med funktionen `image()` der både kan være i `setup()` eller `draw()`, alt efter hvad man skal bruge billedet til.
+
+`image()` har 3 parametre, det første er navnet på variablen med billedet, de to sidste angiver positionen af billedets øverste venstre hjørne:
 ```processing
 image(img, 0, 0);
 ```
@@ -44,7 +46,7 @@ img.resize(0,100);
 ```
 *Eksempel på upload af billede til sketch: sketch kaldet [”LoadImage.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/LoadImage/LoadImage.pde) i mappen ”LoadImage”*
 
-*Eksempel på billede brugt i forloop: sketch kaldet [”Images.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/Images/Images.pde) i mappen ” Images”*
+*Eksempel på billede brugt i forloop: sketch kaldet [”Images.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/Images/Images.pde) i mappen ”Images”*
 
 _**Quick Task: Load et billede ind i en sketch**_
 
@@ -57,7 +59,9 @@ filter(INVERT);
 ```
 Der findes mange forskellige filtre, f.eks. `BLUR` og `GREY`. Flere filtre kan findes i referencen: https://processing.org/reference/
 
-Der kan også udvælges en bestemt pixel eller område af pixels man ønsker at bruge til noget med metoden`get()`.
+Der kan også udvælges en bestemt pixel eller område af pixels man ønsker at bruge til noget med metoden `get()`.
+
+`get()` returnerer en værdi af datatypen `color`, dvs. en farve, derfor skal variablen hvori værdien gemmes defineres som en variabel af denne datatype på samme måde som når vi definerer variabler af typen `int`, `float` eller `boolean`.
 ```processing
 //for at vælge et område (de øverste 20*20 pixels af billedet);
 image(img,0,0);
@@ -75,7 +79,7 @@ Andre funktioner der kan bruges på billeder kan findes I referencen: https://pr
 
 ## Interager med områder på kanvas
 
-Der er ingen nem løsning på at kunne interagere med et billede, en form eller specificeret område på kanvas, man bliver nødt til at definere præcist hvor på kanvas og hvornår der skal ske noget.  Så f.eks. hvis man gerne vil definere om der bliver trykket på et rektangulært billede bliver man nødt til at sætte denne handling ind i en if-sætning med nogle begrænsninger der siger om musen ligger inden for rektanglets areal når der bliver trykket.
+Der er ingen nem løsning på at kunne interagere med et billede, en form eller specificeret område på kanvas, man bliver nødt til at definere præcist hvor på kanvas og hvornår der skal ske noget.  Så f.eks. hvis man gerne vil definere om der bliver trykket på et rektangulært billede bliver man nødt til at sætte denne handling ind i en if-sætning med nogle begrænsninger der siger om musen ligger inden for rektanglets areal når der bliver trykket (Ligesom da vi fik ellipsen til at "bounce" mod siderne sidste gang).
 ```processing
 void mousePressed() {
 	if(mouseX > rectXpos && mouseX < rectXpos+rectWidth && mouseY > rectYpos && mouseY < rectYpos+rectHeight) {
@@ -98,7 +102,7 @@ _**Quick Task: Definer et område på billedet fra den sidste øvelse, så det b
 
 ## Datatypen String
 
-Vi har været omkring datatyperne `int` (Heltal), `float` (Decimaltal) og `boolean`(sandt/falsk). Den sidste type vi kommer ind på er `String`, som er datatypen for tekststrenge. Ud over at en `String` skal defineres i den rigtige datatype, skal man angive at det er en streng ved at sætte `” ”` rundt om teksten.
+Vi har været omkring datatyperne `int` (Heltal), `float` (Decimaltal) `boolean`(sandt/falsk) og meget kort `color` (farver). Den sidste type vi kommer ind på er `String`, som er datatypen for tekststrenge. Ud over at en `String` skal defineres som den rigtige datatype, skal man angive at det er en streng ved at sætte `” ”` rundt om teksten.
 ```processing
 String myText;
 myText = ”Hello World”;
