@@ -212,9 +212,11 @@ Lav et program der **skal** opfylde følgende krav:
 
 Programmet skal være færdigt og afleveres inden **Fredag d. 15. marts 2019 kl. 23.59**
 
+Det er ikke meningen at I skal bruge tid på at lave det derhjemme. Udnyt derimod de 2x3 timer I har hhv. d. 6/3 og 11/3, hvor der vil være en lab-ansat til stedet for at hjælpe jer. Derfor skal I også være realistiske ift. hvad I kan nå at lave på 2x3 timer, så længe det lever op til kravene stillet ovenfor.
+
 **GEM DETTE PROGRAM! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
 
-Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: *Link tl drev kommer senere.*
+Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1XW1DYdmXuf4NT0ZUAmPHuixbBEMqUY25?usp=sharing
 
 Det vil både være os der arbejder i DD Lab, Christian Dindler og Jeanette Falk Olesen, der vil se på jeres programmer.
 
