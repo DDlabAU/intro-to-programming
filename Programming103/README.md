@@ -240,7 +240,7 @@ Det er ikke meningen at I skal bruge tid på at lave det derhjemme. Udnyt derimo
 
 **GEM DETTE PROGRAM! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
 
-Programmet aflevers ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1XW1DYdmXuf4NT0ZUAmPHuixbBEMqUY25?usp=sharing
+Programmet afleveres ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1XW1DYdmXuf4NT0ZUAmPHuixbBEMqUY25?usp=sharing
 
 Det vil både være os der arbejder i DD Lab, Christian Dindler og Jeanette Falk Olesen, der vil se på jeres programmer.
 
