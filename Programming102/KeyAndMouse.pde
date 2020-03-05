@@ -1,4 +1,6 @@
 //If the program does not react to the keys being pressed, click the window with the mouse and try again.
+//Use c-key and arrowkeys to make shapes appear, press on the canvas with the mouse to change the color.
+
 
 //a boolean to turn on and off the ellipse in the middle
 boolean center = false;
@@ -21,25 +23,25 @@ void draw() {
   background(255);
   noStroke();
   fill(c);
-  
+
   //drawing the ellipse and/or rectangles if the booleans are true
   if (center) {
     ellipse(width/2, height/2, 50, 50);
   }
   if (rectangleUp) {
-    
+
     rect(width/2, height/3, 50, 50);
   }
   if (rectangleDown) {
-    
+
     rect(width/2, height/3*2, 50, 50);
   }
   if (rectangleLeft) {
-    
+
     rect(width/3, height/2, 50, 50);
   }
   if (rectangleRight) {
-    
+
     rect(width/3*2, height/2, 50, 50);
   }
 }

@@ -8,6 +8,7 @@ void setup() {
   //calculating the distance between each circle (+1 since we do not want a circle on the edge of the window)
   dist = width/(circles+1);
   background(150);
+  noStroke();
 
   //black circles are made with a for loop
   fill(0);
@@ -16,20 +17,20 @@ void setup() {
     int x = dist*i;
     ellipse(x,height/3,20,20);
   }
-  
+
   //white circles are made with a while loop
   fill(255);
   //making the variable that is automatically a part of the for loop
-  int i = 1;
-  while(i <= circles) {
-    int x = dist*i;
+  int j = 1;
+  while(j <= circles) {
+    int x = dist*j;
     ellipse(x,height/3*2,20,20);
     //remember to increment the variable, or the loop will be eternal!
-    i++;
+    j++;
   }
 }
 
 //for and while loops are loops by themselves, so they do not need to be in draw.
 void draw() {
-  
+
 }

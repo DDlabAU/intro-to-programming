@@ -1,6 +1,5 @@
-# Oversigt
+# Program
 
-- [Program](#program)
 - [The Basics](#the-basics)
   - [Kreativ kode](#kreativ-kode)
   - [Koordinatsystemet på computeren](#koordinatsystemet-p%C3%A5-computeren)
@@ -11,14 +10,9 @@
     - [Reference](#reference)
     - [Variabler](#variabler)
     - [Funktioner](#funktioner)
-    - [Gode links](#gode-links)
+- [Gode links](#gode-links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Program
--	Kreativ kode
--	Processing user interface
--	Basis programmering: Shapes, funktioner og variabler
 
 # The Basics
 ## Kreativ kode
@@ -263,7 +257,6 @@ Der findes også en datatype kaldet `float`, hvilket står for **floating-point*
 
 Processing har nogle indbyggede variabler i sproget, som altid indeholder information om det pågældende program.
 
----
 
 ```processing
 width
@@ -314,7 +307,7 @@ Alt kode der skrives mellem det to klammer (`{ }`) efter `draw()` udføres om og
 
 *Eksempel på brug af setup og draw: sketch kaldet [”SetupAndDraw.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming101/SetupAndDraw.pde)*
 
-### Gode links
+# Gode links
 
 https://www.youtube.com/user/shiffman/featured
 
