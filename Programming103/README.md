@@ -234,17 +234,32 @@ Lav et program der **skal** opfylde følgende krav:
 - Mindst 1 `for`- eller `while`-loop
 - Mindst 1 `if`/`else` statement
 
-Programmet skal være færdigt og afleveres inden **Fredag d. 15. marts 2019 kl. 23.59**
+Programmet skal være færdigt og afleveres inden **Fredag d. 3. april 2020 kl. 23.59**
 
-Det er ikke meningen at I skal bruge tid på at lave det derhjemme. Udnyt derimod de 2x3 timer I har hhv. d. 6/3 og 11/3, hvor der vil være en lab-ansat tilstede for at hjælpe jer. Derfor skal I også være realistiske ift. hvad I kan nå at lave på 2x3 timer, så længe det lever op til kravene stillet ovenfor.
+Det er ikke meningen at I skal bruge tid på at lave det derhjemme. Udnyt derimod de 2x3 timer I har hhv. d. 24/3 og 31/3, hvor der vil være en lab-ansat tilstede for at hjælpe jer. Derfor skal I også være realistiske ift. hvad I kan nå at lave på 2x3 timer, så længe det lever op til kravene stillet ovenfor.
+
+---
 
 **GEM DETTE PROGRAM! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
 
-Programmet afleveres ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1XW1DYdmXuf4NT0ZUAmPHuixbBEMqUY25?usp=sharing
+Indtænk derfor nogle forskellige inputs og outputs der kunne være sjove at slutte til jeres program.
+- LED'er
+- knapper
+- potentiometer
+- kontakt
+- servo motorer
+- lyssensor
+- flexsensor
 
-Det vil både være os der arbejder i DD Lab, Christian Dindler og Jeanette Falk Olesen, der vil se på jeres programmer.
+---
+
+Programmet afleveres ved at uploade det som en **zipfil** på følgende drev: XXX
+
+Det vil både være os der arbejder i DD Lab og Christian Dindler, der vil se på jeres programmer.
 
 **HUSK AT BRUGE REFERENCEN: https://processing.org/reference/**
+
+---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
