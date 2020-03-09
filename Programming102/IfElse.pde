@@ -10,7 +10,7 @@ void setup() {
 
   //The initial x-coordinate of the ball
   x=ballSize/2;
-  //The initial x-coordinate of the ball
+  //The initial y-coordinate of the ball
   y=height/2;
 }
 

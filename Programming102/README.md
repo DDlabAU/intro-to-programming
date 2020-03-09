@@ -141,6 +141,8 @@ Hvis `on` var `true`, så er den nu ændret til `false`, og omvendt hvis den all
 
 *Eksempel på brug af if-sætninger og boolean: sketch kaldet ["ifElseAndBoolean.pde"](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/IfElseAndBoolean.pde)*
 
+**_Quick task: Lav din egen boolean variabel i programmet fra sidste øvelse, der med en if-sætning ændrer noget i programmet når variablen er lig true._**
+
 # Loops
 Nogle gange får vi brug for mindre loops, ud over `draw()`, som vi bedre kan kontrollere. Disse skal placeres inden i enten `setup()` eller `draw()`. Loopet vil gentages om og om igen, indtil vi bestemmer os for at stoppe det. Dvs. Så længe loopet looper udføres koden skrevet efter loopet ikke.
 
@@ -189,7 +191,7 @@ Hvor begge vil resultere i disse cirkler:
 
 *Eksempel på brug af for og while loop: sketch kaldet ["ForAndWhile.pde"](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/ForAndWhile.pde)*
 
-**_Quick task: Lav din egen boolean variabel i programmet fra sidste øvelse, der ændrer noget i programmet når variablen er lig true (med et while-loop, for-loop eller med en if-sætning)._**
+**_Quick task: Brug et for-loop til at printe 5-tabellen op til 50 én gang i konsollen (Brug kun `setup()`, lad `draw()` være tom)._**
 
 
 # Arrays
