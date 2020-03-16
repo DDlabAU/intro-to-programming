@@ -169,7 +169,7 @@ Læs mere om tekstjustering med `textAlign()` [i referencen](https://www.process
 
 ---
 
-Hvis man vil tjekke om to strenge er det samme, kan man *ikke* bruge `==`, i stedet skal man bruge `equals`-funktionen med *punkt-notation* (Tidligere omtalt under billeder)
+Hvis man vil tjekke om to strenge er det samme, kan man *ikke* bruge `==`, i stedet skal man bruge `equals`-funktionen med *punkt-notation* (Tidligere omtalt under [billeder](#billeder))
 ```processing
 String text1 = ”Hello World”;
 String text2 = “Hello World”;
@@ -183,7 +183,7 @@ if(text1.equals(text2)) {
 
 ## Funktioner brugt på Strings
 
-Med *punkt-notation* (omtalt under [billeder](#billeder)) kan man også bruge forskellige andre metoder på tekststrenge. f.eks.:
+Med *punkt-notation* (Tidligere omtalt under [billeder](#billeder)) kan man også bruge forskellige andre metoder på tekststrenge. f.eks.:
 
 `.substring()` returnerer en String der er en del af en anden String. Funktionen kan både tage 1 eller 2 parametre. For at specificere hvilken del af tekststrengen man ønsker, skal man specificere strengens start- og slutindex, hvor index svarer til karakterer i en String. Det angivne startindex er inkluderet i strengen, og det angivne slutindex *ikke* er inkluderet i strengen. Index starter ved 0, ligesom det gør ved Arrays, som blev introduceret sidste gang. Dvs. index 0 i `myText` vil være `H`. Hvis der angives to parametre, så er det første startindex, og det andet er slutindex. Hvis der kun angives ét index, er dette startindex, og slutindex angives automatisk som afslutningen på strengen.
 
