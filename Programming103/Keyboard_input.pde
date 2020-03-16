@@ -1,3 +1,5 @@
+// a typing program.
+
 String myText = "Start typing! ";
 
 void setup() {

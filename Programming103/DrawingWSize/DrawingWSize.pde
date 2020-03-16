@@ -1,3 +1,12 @@
+/*
+A drawing program, where you can:
+* press the color you want to draw with at the top
+* press down the mouse on the part below to draw
+* press the space-bar to clear the drawing
+* press one of the circles at the bottom to choose a size of the "brush"
+* press the rectangle in the lower right corner to change the background color
+*/
+
 PImage colors;
 color c = color(0);
 int colorSize;

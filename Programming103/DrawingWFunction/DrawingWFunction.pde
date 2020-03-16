@@ -1,3 +1,12 @@
+/*
+A drawing program, where you can:
+* press the color you want to draw with at the top
+* press down the mouse on the part below to draw
+* press the space-bar to clear the drawing
+* press one of the circles at the bottom to choose a size of the "brush"
+* press the rectangle in the lower right corner to change the background color
+*/
+
 PImage colors;
 color c = color(0);
 int colorSize;
@@ -14,13 +23,13 @@ int rectX, rectY;
 void setup() {
   size(500 , 500);
   background(255);
-  
+
   ellipX = width/4;
   ellipY = height-50;
-  
+
   rectX = width-rectSize;
   rectY = height-rectSize;
-  
+
   colors = loadImage("color.png");
   colorSize = height/5;
   colors.resize(width, colorSize);
@@ -34,9 +43,9 @@ void draw() {
 
 void displayEllipse() {
   fill(c);
-  noStroke(); 
+  noStroke();
   for (int i = 1; i <= 3; i++) {
-    ellipse(ellipX*i, ellipY, thick*i, thick*i);  
+    ellipse(ellipX*i, ellipY, thick*i, thick*i);
   }
 }
 
@@ -56,7 +65,7 @@ void mouseDragged() {
       strokeWeight(strokeW);
       stroke(c);
       line(mouseX, mouseY, pmouseX, pmouseY);
-    }  
+    }
 }
 
 void mousePressed() {
@@ -72,7 +81,7 @@ void mousePressed() {
     if (dist(mouseX, mouseY, ellipX*3, ellipY) < thick*3/2) {
       strokeW = thick*3;
     }
-    
+
     if(mouseX > rectX && mouseX < rectX+rectSize && mouseY > rectY && mouseY < rectY+rectSize) {
       background(c);
     }

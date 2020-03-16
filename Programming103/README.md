@@ -37,17 +37,22 @@ img = loadImage(”img.jpg”);
 
 Herefter kan vi vise og placere billedet på kanvas med funktionen `image()` der både kan være i `setup()` eller `draw()`, alt efter hvad man skal bruge billedet til.
 
-`image()` bruges til at fremvise billedet på kanvas. Funktionen har 3 parametre, det første er navnet på variablen med billedet, de to sidste angiver positionen af billedets øverste venstre hjørne, dvs. hhv. x- og y-koodinater:
+`image()` bruges til at fremvise billedet på kanvas. Funktionen har 3 parametre, det første er navnet på variablen med billedet, de to sidste angiver positionen af billedets øverste venstre hjørne, dvs. hhv. x- og y-koordinater:
 ```processing
-image(img, 0, 0);
+image(img, x, y);
 ```
 
-Hvis vi ønsker at ændre størrelsen på billedet, bruges funktionen `image()` også, men i stedet har den 5 paramtre. De 3 første er stadig hhv. billedet og billedets position. Det 4. parameter er den ønskede bredde på billedet i pixels, det 5. parameter er den ønskede højde i pixels. Følgende får f.eks. billedet til at udfylde hele kanvas:
+Hvis vi ønsker at ændre størrelsen på billedet, bruges funktionen `image()` også, men i stedet har den 5 parametre. De 3 første er stadig hhv. billedet og billedets position. Det 4. parameter er den ønskede bredde på billedet i pixels, det 5. parameter er den ønskede højde i pixels.
+```processing
+image(img, x, y, w, h);
+```
+
+ Følgende parametre i funktionen får derfor billedet til at udfylde hele kanvas:
 ```processing
 image(img, 0, 0, width, height);
 ```
 
-For at bevare billedets proportioner kan vi angive billedets bredde og højde ift. dets originale bredde og højde.Vi kan henvise til billedets originale proportioner ved at bruge såkaldt *punkt-notation*, med punktum imellem navnet på variablen og de informationer vi ønsker. dvs. `img.width` og `img.height` refererer til billedet gemt i variablen img's bredde og højde. Dermed kan vi bestemme billedet proportioner ved at dividere eller gange de to med det samme i `image()`:
+For at bevare billedets proportioner kan vi angive billedets bredde og højde ift. dets originale bredde og højde. Vi kan henvise til billedets originale proportioner ved at bruge såkaldt *punkt-notation*, med punktum imellem navnet på variablen og de informationer vi ønsker. dvs. `img.width` og `img.height` refererer til billedet gemt i variablen img's bredde og højde. Dermed kan vi bestemme billedet proportioner ved at dividere eller gange de to med det samme i `image()`:
 ```processing
 //Gør billedet halvt så stort, som det er originalt
 image(img, 0, 0, img.width/2, img.height/2);
@@ -99,7 +104,7 @@ void mousePressed() {
 	}
 }
 ```
-Ligeledes, hvis det er et cirkulært område, der skal ændres når det trykkes på, bliver man nødt til at se om afstanden fra cirklens centrum ud til musen er mindre end cirklens radius. Dette kan udregnes med `dist()` funktionen. `dist()` tager 4 parametre, som er hhv. de to koordinater, man ønsker at kende afstanden mellem i pixels.
+Ligeledes, hvis det er et cirkulært område, der skal ændres når det trykkes på, bliver man nødt til at se om afstanden fra cirklens centrum ud til musen er mindre end cirklens radius. Dette kan udregnes med `dist()` funktionen, som kan udregne afstanden mellem to koordinater. `dist()` tager derfor 4 parametre, som er hhv. de to koordinater, man ønsker at kende afstanden mellem i pixels.
 ```processing
 void mousePressed() {
 	if(dist(mouseX, mouseY, ellipX, ellipY) < ellipRadius) {
@@ -110,11 +115,11 @@ void mousePressed() {
 
 *Eksempel på brug af definerede områder: sketch kaldet [”DrawingWSize.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/DrawingWSize/DrawingWSize.pde) i mappen ”DrawingWSize”*
 
-_**Quick Task: Definer et område på billedet fra den sidste øvelse, så det bliver interaktivt, så der sker noget, når det klikkes på det, eller musen holdes hen over det el.lign.**_
+_**Quick Task: Definer et område på billedet fra den sidste øvelse, så det bliver interaktivt, dvs. så der sker noget, når der klikkes på det, eller musen holdes hen over det el.lign.**_
 
 # Datatypen String
 
-Vi har været omkring datatyperne `int` (Heltal), `float` (Decimaltal) `boolean`(sandt/falsk) og meget kort `color` (farver). Den sidste type vi kommer ind på er `String`, som er datatypen for tekststrenge. Ud over at en `String` skal defineres som den rigtige datatype, skal man angive at det er en streng ved at sætte `” ”` rundt om teksten.
+Vi har været omkring datatyperne `int` (Heltal), `float` (Decimaltal), `boolean`(sandt/falsk), `PImage` (billeder) og meget kort `color` (farver). Den sidste type vi kommer ind på er `String`, som er datatypen for tekststrenge. Ud over at en `String` skal defineres som den rigtige datatype, skal man angive at det er en streng ved at sætte `” ”` rundt om teksten.
 ```processing
 String myText;
 myText = ”Hello World”;
@@ -130,25 +135,25 @@ String myText = one + “ “ + two;	//Nu indeholder myText “Hello World”
 
 For at vise en tekststreng på kanvas skal man bruge funktionen `text()`.
 ```processing
-text(myText, 50, 50);
+text(myText, x, y);
 //Eller
-text(myText, 50, 50, 200, 200);
+text(myText, x, y, w, h);
 ```
-`text`-funktionen kan tage 3 eller 5 parametre. Det første parameter er altid den tekststreng man gerne vil vise på kanvas. Det andet og tredje parameter er hhv. x og y koordinatet for det øverste venstre hjørne af teksten (hvis dette er det aktuelle rectMode). Det fjerde og femte parameter er bredden på det område man ønsker at have tekst.
+`text`-funktionen kan tage 3 eller 5 parametre. Det første parameter er altid den tekststreng man gerne vil vise på kanvas. Det andet og tredje parameter er hhv. x og y koordinatet for det øverste venstre hjørne af teksten (hvis dette er det aktuelle rectMode - [se i referencen](https://processing.org/reference/rectMode_.html)). Det fjerde og femte parameter er bredden på det område man ønsker at have tekst.
 
 ---
 
-*Før* man viser sin kode på kanvas kan man angive størrelsen på teksten med funktionen `textSize()`
+*Før* man viser sin bruger `text()`-funktionen på kanvas kan man angive størrelsen på teksten med funktionen `textSize()`
 ```processing
 fill(0);
 textSize(32);
 text(myText, 50, 50);
 ```
-`textSize` tager et parameter, som er størrelsen på teksten i pixels.  (tekst kan gives farve med `fill` funktionen).
+`textSize` tager et parameter, som er størrelsen på teksten i pixels.  (tekst kan gives farve med `fill()` funktionen).
 
 ---
 
-Man kan også hhv. højre-, venstre- eller centerjustere teksten. Dette gøres med funktionen `textAlign()`:
+Man kan også hhv. højre-, venstre- eller centerjustere teksten. Dette gøres med funktionen `textAlign()` før man bruger `text()`-funktionen:
 ```processing
 fill(0);
 textAlign(CENTER); //Kunne også være LEFT eller RIGHT
@@ -158,9 +163,9 @@ textAlign(CENTER, CENTER); //2. parameter kunne også være TOP, BOTTOM eller BA
 
 text(myText, 50, 50);
 ```
-Hvordan teksten skal justeres skal også angives *før* man viser teksten på kanvas med `text()`. `textAlign()` kan tage 1 eller to parametre. Hvis man angiver 1 parameter er det hvilken justering på x-aksen teksten skal have. Ligeledes angiver det andet parameter hvilken justering på y-aksen, teksten skal have.
+Hvordan teksten skal justeres skal også angives *før* man viser teksten på kanvas med `text()`. `textAlign()` kan tage 1 eller to parametre. Hvis man angiver 1 parameter er det hvilken justering på x-aksen teksten skal have(CENTER, LEFT eller RIGHT). Ligeledes angiver det andet parameter hvilken justering på y-aksen, teksten skal have (CENTER, TOP, BOTTOM eller BASELINE).
 
-Læs mere om tekstjustering med `textAlign()` i referencen: https://www.processing.org/reference/textAlign_.html
+Læs mere om tekstjustering med `textAlign()` [i referencen](https://www.processing.org/reference/textAlign_.html)
 
 ---
 
@@ -178,29 +183,30 @@ if(text1.equals(text2)) {
 
 ## Funktioner brugt på Strings
 
-Med *punkt-notation* (omtalt under billeder) kan man også bruge forskellige andre metoder på tekststrenge. f.eks.:
+Med *punkt-notation* (omtalt under [billeder](#billeder)) kan man også bruge forskellige andre metoder på tekststrenge. f.eks.:
+
+`.substring()` returnerer en String der er en del af en anden String. Funktionen kan både tage 1 eller 2 parametre. For at specificere hvilken del af tekststrengen man ønsker, skal man specificere strengens start- og slutindex, hvor index svarer til karakterer i en String. Det angivne startindex er inkluderet i strengen, og det angivne slutindex *ikke* er inkluderet i strengen. Index starter ved 0, ligesom det gør ved Arrays, som blev introduceret sidste gang. Dvs. index 0 i `myText` vil være `H`. Hvis der angives to parametre, så er det første startindex, og det andet er slutindex. Hvis der kun angives ét index, er dette startindex, og slutindex angives automatisk som afslutningen på strengen.
+
 ```processing
 String world = myText.substring(6);	//world indeholder nu ”World”
 //Eller
 String hello = myText.substring(0,5);	//hello inde holder nu ”Hello”
 ```
-`.substring()` returnerer en String der er en del af en anden String. Funktionen kan både tage 1 eller 2 parametre. For at specificere hvilken del af tekststrengen man ønsker, skal man specificere strengens start- og slutindex, hvor index svarer til karakterer i en String. Det angivne startindex er inkluderet i strengen, og det angivne slutindex *ikke* er inkluderet i strengen. Index starter ved 0, ligesom det gør ved Arrays, som blev introduceret sidste gang. Dvs. index 0 i `myText` vil være `H`. Hvis der angives to parametre, så er det første startindex, og det andet er slutindex. Hvis der kun angives ét index, er dette startindex, og slutindex angives automatisk som afslutningen på strengen.
-
 ---
 
+
+`.length()` returnerer antallet af karakterer i tekststrengen.
 ```processing
 int textLength = myText.length();	//nu indeholder textLength tallet 11)
 ```
-`.length()` returnerer antallet af karakterer i tekststrengen.
-
 ---
 
+
+`.trim()` fjerner ”whitespace”-karakterer (mellemrum, tap, osv.) fra en tekststreng.
 ```processing
 String longText = ”	   	Hello! 	”;
 String shortText = longText.trim();	//shortText indeholder nu “Hello!” uden de unødvendige mellemrum.
 ```
-`.trim()` fjerner ”whitespace”-karakterer (mellemrum, tap, osv.) fra en tekststreng.
-
 ---
 
 Andre funktioner kan tage tekststrenge som parametre.
@@ -213,9 +219,13 @@ if (hasCode != null) {
 ```
 `match()` kan bruges til at tjekke om en tekststreng indeholder en anden tekststreng. Funktionen tager to parametre. Det første parameter er den streng man gerne vil tjekke om indeholder en anden streng, det andet parameter er den streng man ønsker at undersøger om er indeholdt i den første streng. Resultatet af denne skal gemmes i et array. Hvis arrayet efter at have udført `match()` ikke indeholder nogen elementer, betyder det at der ikke var et "match", altså at tekststrengen, der var det første parameter, ikke er indeholdt i tekststrengen, der var det andet parameter. Hvis et array er tomt er det lig værdien `null`.
 
+---
+
+Læs om flere funktioner der kan bruges på teksstrenge [i referencen](https://processing.org/reference/) under *String Functions*.
+
 *Eksempel på brug af tekststrenge til at få tekstinput fra bruger: sketch kaldet [”KeyboardInput.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/Keyboard_input.pde)*
 
-_**Quick Task: Få tekst til at vises på kanvas enten i en ny sketch, eller brug teksten i sketchen fra sidste øvelse.**_
+_**Quick Task: Få tekst til at vises på kanvas enten i en ny sketch, eller indsæt tekst i sketchen fra sidste øvelse.**_
 
 # Definition af en funktion
 
@@ -227,9 +237,9 @@ void myFunction() [
 	//det du vil have til at ske når funktionen kaldes.
 }
 ```
-Funktionen defineres ved at skrive returtypen først, efterfulgt af et vilkårligt navn der beskriver det der sker i funktionen, herefter to parenteser, og til sidst to klammer, `{ }`, hvor imellem koden der skal udføres når man kalder funktionen skrives. Returtypen er den datatype, der kommer ud af funktionen, men hvis den angives som `void`, vil det sige at funktionen ikke skal returnere noget, så dette er nok den type I kommer til at bruge. Hele funktionen skal placeres udenfor de andre funktioner.
+Funktionen defineres ved at skrive returtypen først, efterfulgt af et vilkårligt navn der beskriver det der sker i funktionen, herefter to parenteser, og til sidst to klammer, `{ }`, hvor imellem koden der skal udføres når man kalder funktionen skrives. Returtypen er den datatype, der kommer ud af funktionen, for eksempel ved vi at `random()`-funktionen returnerer et kommatal (`float`). Hvis den angives som `void`, vil det sige at funktionen ikke skal returnere noget, så dette er nok den type I kommer til at bruge mest. Hele funktionen skal placeres udenfor de andre funktioner.
 
-Når man så skal bruge sin funktion, så kaldes funktionen når den skal bruges (enten i `setup()`, `draw()`, en af de andre predefinerede funktioner eller i en anden funktion I selv har lavet.). funktionen kaldes ved at skrive navnet op funktionen efterfulgt af to parenteser:
+Når man så skal bruge sin funktion, laver man et funktionskald (enten i `setup()`, `draw()`, en af de andre predefinerede funktioner eller i en anden funktion I selv har lavet.). Funktionen kaldes ved at skrive navnet på funktionen efterfulgt af to parenteser:
 ```processing
 myFunction();
 ```
@@ -244,7 +254,7 @@ Hvis den angives med parametre, skal disse angives når funktionen kaldes:
 ```processing
 myFunction(width/2, height/2);
 ```
-*Eksempel på brug af selvdefinerede funktioner frem for at skrive alt i draw: sketch kaldet [”DrawingWFunction.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/DrawingWFunction/DrawingWFunction.pde) i mappen ”DrawingWFunction.*
+*Eksempel på brug af selvdefinerede funktioner frem for at skrive alt i draw: ketch kaldet [”DrawingWFunction.pde”](https://github.com/DDlabAU/introToProgramming/blob/master/Programming103/DrawingWFunction/DrawingWFunction.pde) i mappen ”DrawingWFunction.*
 
 _**Quick Task: Arbejd videre på jeres sketch fra de sidste par øvelser og prøv at placere kodestumper ind i funktioner I selv definerer.**_
 
@@ -258,24 +268,22 @@ Lav et program der **skal** opfylde følgende krav:
 
 Programmet skal være færdigt og afleveres inden **Fredag d. 3. april 2020 kl. 23.59**
 
-Det er ikke meningen at I skal bruge tid på at lave det derhjemme. Udnyt derimod de 2x3 timer I har hhv. d. 24/3 og 31/3, hvor der vil være en lab-ansat tilstede for at hjælpe jer. Derfor skal I også være realistiske ift. hvad I kan nå at lave på 2x3 timer, så længe det lever op til kravene stillet ovenfor.
+Brug max 2x3 timer på at lave progammet, hvilket svarer til de to workshop gange I skulle have haft hhv. d. 24/3 og 31/3. Derfor skal I også være realistiske ift. hvad I kan nå at lave på 2x3 timer, så længe det lever op til kravene stillet ovenfor.
 
 ---
 
-**GEM DETTE PROGRAM! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
+**GEM DET PROGRAM I LAVER! – I skal bruge det når vi skal i gang med at arbejde med Arduino.**
 
 Indtænk derfor nogle forskellige inputs og outputs der kunne være sjove at slutte til jeres program.
-- LED'er
 - knapper
 - potentiometer
 - kontakt
-- servo motorer
 - lyssensor
 - flexsensor
 
 ---
 
-Programmet afleveres ved at uploade det som en **zipfil** på følgende drev: XXX
+Programmet afleveres ved at uploade det som en **zipfil** på følgende drev: https://drive.google.com/drive/folders/1Bx4v0xB9Zv3Mocv0DQAiX_ZWVNwHtB4d?usp=sharing
 
 Det vil både være os der arbejder i DD Lab og Christian Dindler, der vil se på jeres programmer.
 
