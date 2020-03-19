@@ -248,7 +248,7 @@ Hvilket giver følgende resultat:
 
 *Eksempel på brug af for-loop og array i kombination: sketch kaldet ["ArrayFor.pde"](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/ArrayFor.pde)*
 
-**_Qucik task: Lav et nyt program med et for loop der er begrænset af længden af et array._**
+**_Quick task: Lav et nyt program med et for loop der er begrænset af længden af et array._**
 
 # Indbyggede funktioner
 Processing har nogle indbyggede funktioner, som kan bruges til at registrere brugerinteraktion, f.eks. fra musen eller tastaturet.
@@ -289,6 +289,9 @@ Andre `keyCode` variabler er f.eks. `ENTER`, `DOWN`, `RIGHT`, `LEFT` og `DELETE`
 Der findes andre funktioner til at lave interaktion med mus og tastatur, f.eks. `mouseClicked`, `mouseDragged` og `keyTyped`, som alle kan slås op i referencen: https://processing.org/reference/
 
 *Eksempel på brug af `mousePressed` og `keyPressed`: sketch kaldet ["KeyAndMouse.pde"](https://github.com/DDlabAU/introToProgramming/blob/master/Programming102/KeyAndMouse.pde)*
+
+***Quick task: Tag udgangspunkt i koden i ```keyMouseExercise```-filen og lav ændringer så man styrer visningen af cirklen med enten taste- eller musetryk***
+
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
